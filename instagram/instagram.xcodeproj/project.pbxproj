@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		848360342240D2C100512807 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848360332240D2C100512807 /* HomeViewController.swift */; };
+		848360372240D34200512807 /* FeedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848360362240D34200512807 /* FeedList.swift */; };
+		8483603A2240D38700512807 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848360392240D38700512807 /* Feed.swift */; };
+		8483603C2240D85300512807 /* FeedListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8483603B2240D85300512807 /* FeedListProtocol.swift */; };
 		848D04F3223BDE77001C704A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D04F2223BDE77001C704A /* AppDelegate.swift */; };
 		848D04F5223BDE77001C704A /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D04F4223BDE77001C704A /* ContainerViewController.swift */; };
 		848D04FA223BDE79001C704A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848D04F9223BDE79001C704A /* Assets.xcassets */; };
@@ -33,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		848360332240D2C100512807 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		848360362240D34200512807 /* FeedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedList.swift; sourceTree = "<group>"; };
+		848360392240D38700512807 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		8483603B2240D85300512807 /* FeedListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListProtocol.swift; sourceTree = "<group>"; };
 		848D04EF223BDE77001C704A /* instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848D04F2223BDE77001C704A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		848D04F4223BDE77001C704A /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +80,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		848360352240D2F300512807 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				848360382240D35700512807 /* Model */,
+				848360362240D34200512807 /* FeedList.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		848360382240D35700512807 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				848360392240D38700512807 /* Feed.swift */,
+				8483603B2240D85300512807 /* FeedListProtocol.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		848D04E6223BDE77001C704A = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +121,7 @@
 		848D04F1223BDE77001C704A /* instagram */ = {
 			isa = PBXGroup;
 			children = (
+				848360352240D2F300512807 /* DataManager */,
 				848D0520223BEF55001C704A /* Application */,
 				848D0522223BEF8E001C704A /* ViewControllers */,
 				848D0521223BEF6C001C704A /* Support Files */,
@@ -142,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				848D04F4223BDE77001C704A /* ContainerViewController.swift */,
+				848360332240D2C100512807 /* HomeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -277,7 +305,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				848D04F5223BDE77001C704A /* ContainerViewController.swift in Sources */,
+				8483603A2240D38700512807 /* Feed.swift in Sources */,
+				848360372240D34200512807 /* FeedList.swift in Sources */,
+				8483603C2240D85300512807 /* FeedListProtocol.swift in Sources */,
 				848D04F3223BDE77001C704A /* AppDelegate.swift in Sources */,
+				848360342240D2C100512807 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
